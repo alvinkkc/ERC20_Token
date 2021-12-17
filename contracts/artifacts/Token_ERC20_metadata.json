@@ -433,7 +433,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Token_Erc20.sol": "Token_Erc20"
+			"contracts/Token_ERC20.sol": "Token_ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -471,12 +471,12 @@
 				"dweb:/ipfs/QmPmCRCWXSAysk29Wt6n9vaJBUKCrLiocyXwDXyiChfEVa"
 			]
 		},
-		"contracts/Token_Erc20.sol": {
-			"keccak256": "0x614055bd4c22986c9478ff1338c878397ad046dc771dbe0520e873717222bc83",
+		"contracts/Token_ERC20.sol": {
+			"keccak256": "0x6754708221f91d0eca4fef4b6c2f2ce18827e975708088e1f187c4563b2b35f3",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fb91729fcde3945cd9e6a2daa0181ae481c6be87a04c547cc14ee6b75db4de3d",
-				"dweb:/ipfs/QmWkA9JNGxStH1yj36JdaxPU9TDwYUxBFMFhkhPHJMgoFe"
+				"bzz-raw://336a136675061546c16daab4dd5d544307ce029dc1d8082adba12572e891bdee",
+				"dweb:/ipfs/QmcdiyW9XD5oCkXXe6YH8ie9NtuiQfh6Dvye2PdZjoigM1"
 			]
 		},
 		"contracts/utils/Context.sol": {

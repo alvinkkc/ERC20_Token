@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.10+commit.fc410830"
+		"version": "0.5.16+commit.9c3226ce"
 	},
 	"language": "Solidity",
 	"output": {
@@ -56,6 +56,7 @@
 				"type": "event"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -76,10 +77,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -100,10 +103,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -119,10 +124,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -132,10 +139,12 @@
 						"type": "uint8"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "getOwner",
 				"outputs": [
@@ -145,10 +154,12 @@
 						"type": "address"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -158,10 +169,12 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "symbol",
 				"outputs": [
@@ -171,10 +184,12 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "totalSupply",
 				"outputs": [
@@ -184,10 +199,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -208,10 +225,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -237,26 +256,18 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"events": {
-				"Approval(address,address,uint256)": {
-					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
-				},
-				"Transfer(address,address,uint256)": {
-					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
-				}
-			},
-			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
-					"details": "Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called."
+					"details": "Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default.      * This value changes when {approve} or {transferFrom} are called."
 				},
 				"approve(address,uint256)": {
-					"details": "Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event."
+					"details": "Sets `amount` as the allowance of `spender` over the caller's tokens.      * Returns a boolean value indicating whether the operation succeeded.      * IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729      * Emits an {Approval} event."
 				},
 				"balanceOf(address)": {
 					"details": "Returns the amount of tokens owned by `account`."
@@ -277,29 +288,23 @@
 					"details": "Returns the amount of tokens in existence."
 				},
 				"transfer(address,uint256)": {
-					"details": "Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+					"details": "Moves `amount` tokens from the caller's account to `recipient`.      * Returns a boolean value indicating whether the operation succeeded.      * Emits a {Transfer} event."
 				},
 				"transferFrom(address,address,uint256)": {
-					"details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+					"details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance.      * Returns a boolean value indicating whether the operation succeeded.      * Emits a {Transfer} event."
 				}
-			},
-			"version": 1
+			}
 		},
 		"userdoc": {
-			"kind": "user",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"contracts/IBEP20/IBEP20.sol": "IBEP20"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
-		"metadata": {
-			"bytecodeHash": "ipfs"
-		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -308,11 +313,10 @@
 	},
 	"sources": {
 		"contracts/IBEP20/IBEP20.sol": {
-			"keccak256": "0xa5403b3f21861bc359096f32f71571e29232c27589d8dbd4d59dc86fdd464e60",
-			"license": "GPL-3.0",
+			"keccak256": "0x01efb32c208a110a1d2a4138c5c1009f858ac0fb38708c75e4f70e7ba389ab63",
 			"urls": [
-				"bzz-raw://4829930657981e523cfbe4b983bb6f069e96174eb7033295f63ccb726f53156c",
-				"dweb:/ipfs/QmamRLV1fC52hpJiCQpZEgjXrQETi36X8SiWwWLqjs3tzF"
+				"bzz-raw://8901550c655babbb0c522099ef628519eb309f9d3c161c4f107fd33012d3a3f5",
+				"dweb:/ipfs/QmZK8eUdPGx9P3oh47C3kcvjKrZRoXJEtHaaiM3fFM4FRV"
 			]
 		}
 	},

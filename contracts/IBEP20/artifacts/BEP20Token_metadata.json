@@ -1,18 +1,13 @@
 {
 	"compiler": {
-		"version": "0.8.10+commit.fc410830"
+		"version": "0.5.16+commit.9c3226ce"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "initialSupply",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -86,19 +81,7 @@
 				"type": "event"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "bool",
-						"name": "active_",
-						"type": "bool"
-					}
-				],
-				"name": "active",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -119,10 +102,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -143,10 +128,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -162,10 +149,33 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -175,10 +185,12 @@
 						"type": "uint8"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -199,23 +211,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getActive",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
+				"constant": true,
 				"inputs": [],
 				"name": "getOwner",
 				"outputs": [
@@ -225,10 +226,12 @@
 						"type": "address"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -249,12 +252,20 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "mintable",
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -262,10 +273,12 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -275,10 +288,36 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
 				"inputs": [],
 				"name": "symbol",
 				"outputs": [
@@ -288,10 +327,12 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "totalSupply",
 				"outputs": [
@@ -301,10 +342,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -325,10 +368,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -354,10 +399,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -367,79 +414,76 @@
 				],
 				"name": "transferOwnership",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"kind": "dev",
 			"methods": {
-				"active(bool)": {
-					"details": "Returns if the token is active or not."
-				},
 				"allowance(address,address)": {
-					"details": "See {IERC20-allowance}."
+					"details": "See {BEP20-allowance}."
 				},
 				"approve(address,uint256)": {
-					"details": "See {IERC20-approve}. Requirements: - `spender` cannot be the zero address."
+					"details": "See {BEP20-approve}.    * Requirements:    * - `spender` cannot be the zero address."
 				},
 				"balanceOf(address)": {
-					"details": "See {IERC20-balanceOf}."
+					"details": "See {BEP20-balanceOf}."
+				},
+				"burn(uint256)": {
+					"details": "Destroys `amount` tokens from `msg.sender`, reducing the total supply.    * Requirements    * - `account` cannot be the zero address. - `account` must have at least `amount` tokens."
 				},
 				"decimals()": {
-					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
+					"details": "Returns the token decimals."
 				},
 				"decreaseAllowance(address,uint256)": {
-					"details": "Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`."
-				},
-				"getActive()": {
-					"details": "Returns if the token is active or not."
+					"details": "Atomically decreases the allowance granted to `spender` by the caller.    * This is an alternative to {approve} that can be used as a mitigation for problems described in {BEP20-approve}.    * Emits an {Approval} event indicating the updated allowance.    * Requirements:    * - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`."
 				},
 				"getOwner()": {
-					"details": "Returns the erc token owner."
+					"details": "Returns the bep token owner."
 				},
 				"increaseAllowance(address,uint256)": {
-					"details": "Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address."
+					"details": "Atomically increases the allowance granted to `spender` by the caller.    * This is an alternative to {approve} that can be used as a mitigation for problems described in {BEP20-approve}.    * Emits an {Approval} event indicating the updated allowance.    * Requirements:    * - `spender` cannot be the zero address."
 				},
-				"mintable()": {
-					"details": "Returns if the token is mintable or not."
+				"mint(uint256)": {
+					"details": "Creates `amount` tokens and assigns them to `msg.sender`, increasing the total supply.    * Requirements    * - `msg.sender` must be the token owner"
 				},
 				"name()": {
-					"details": "Returns the name of the token."
+					"details": "Returns the token name."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.    * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
 				},
 				"symbol()": {
-					"details": "Returns the symbol of the token, usually a shorter version of the name."
+					"details": "Returns the token symbol."
 				},
 				"totalSupply()": {
-					"details": "See {IERC20-totalSupply}."
+					"details": "See {BEP20-totalSupply}."
 				},
 				"transfer(address,uint256)": {
-					"details": "See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`."
+					"details": "See {BEP20-transfer}.    * Requirements:    * - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`."
 				},
 				"transferFrom(address,address,uint256)": {
-					"details": "See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for ``sender``'s tokens of at least `amount`."
+					"details": "See {BEP20-transferFrom}.    * Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {BEP20};    * Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for `sender`'s tokens of at least `amount`."
 				},
 				"transferOwnership(address)": {
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
-			},
-			"version": 1
+			}
 		},
 		"userdoc": {
-			"kind": "user",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Token_Erc20.sol": "Token_Erc20"
+			"contracts/IBEP20/BEP20.sol": "BEP20Token"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
-		"metadata": {
-			"bytecodeHash": "ipfs"
-		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -447,52 +491,32 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC20/ERC20.sol": {
-			"keccak256": "0xd7ab452b059c59952dc6343ff363bc69e7348959f4fff5efda1bb4a56382befa",
-			"license": "MIT",
+		"contracts/IBEP20/BEP20.sol": {
+			"keccak256": "0x9731211a3c4cffaf1604cd6ac6881a0b0534549075edb0ecb02c3ef068e79962",
 			"urls": [
-				"bzz-raw://43673afa5448e46a30eefdf1fda77ae164807965f485ba4dc5df19fdf4963eab",
-				"dweb:/ipfs/QmbwKhmKjQSaipKhYr7gXtz7jQvmqhhYxq65jSKTLfT3sx"
+				"bzz-raw://3843f59c998b72ea214e50338bfacfbf85baaa8762d9ecf082fe0b5852e76c21",
+				"dweb:/ipfs/QmPSYg8o4hUeugCrL99bj1rzswmxwqxMroS7LPZK5jsxFL"
 			]
 		},
-		"contracts/ERC20/IERC20.sol": {
-			"keccak256": "0x9965b17c915fc1dad31e31e468b342822982fe77c70acc41d1d1a55beb2f4913",
-			"license": "MIT",
+		"contracts/IBEP20/IBEP20.sol": {
+			"keccak256": "0x01efb32c208a110a1d2a4138c5c1009f858ac0fb38708c75e4f70e7ba389ab63",
 			"urls": [
-				"bzz-raw://9781fea5dca1d46db45b1261605a8179c7c82d5df5bc6ee65f2d2193b7550cdb",
-				"dweb:/ipfs/QmRKouisrvVABub2LUGpfXEfvodMeW121qEESYMkcdi1Hi"
+				"bzz-raw://8901550c655babbb0c522099ef628519eb309f9d3c161c4f107fd33012d3a3f5",
+				"dweb:/ipfs/QmZK8eUdPGx9P3oh47C3kcvjKrZRoXJEtHaaiM3fFM4FRV"
 			]
 		},
-		"contracts/ERC20/extensions/IERC20Metadata.sol": {
-			"keccak256": "0x746a2bfbe582b80b5e84d1641f62d00f3d1df2ccb066175019e47813bfc1bb93",
-			"license": "MIT",
+		"contracts/IBEP20/utils/Context.sol": {
+			"keccak256": "0x8be1c589cc3e8abed41ddcdfc9afd6f6301236f48e39f9768de822d786d79ce0",
 			"urls": [
-				"bzz-raw://1f659c234f91fd63c4b8c4a15575dd327131b941ec07ae371292f066e856110d",
-				"dweb:/ipfs/QmPmCRCWXSAysk29Wt6n9vaJBUKCrLiocyXwDXyiChfEVa"
+				"bzz-raw://e6b8c73e3677e7c15dec8b6a3e2a45d9287b871db36c070ca842b32e9fbe6a53",
+				"dweb:/ipfs/QmZo5H7EHN95DuM8AnqiUJPeZ8MZ8MJjawoNTQvxwnfDcH"
 			]
 		},
-		"contracts/Token_Erc20.sol": {
-			"keccak256": "0x614055bd4c22986c9478ff1338c878397ad046dc771dbe0520e873717222bc83",
-			"license": "GPL-3.0",
+		"contracts/IBEP20/utils/SafeMath.sol": {
+			"keccak256": "0x8defd56263620d4fb0df2afef4a876adbea143c5f319774adb27ec640665977c",
 			"urls": [
-				"bzz-raw://fb91729fcde3945cd9e6a2daa0181ae481c6be87a04c547cc14ee6b75db4de3d",
-				"dweb:/ipfs/QmWkA9JNGxStH1yj36JdaxPU9TDwYUxBFMFhkhPHJMgoFe"
-			]
-		},
-		"contracts/utils/Context.sol": {
-			"keccak256": "0x2c36c9489879b7c91cdd73bbe8b2584f401aa26f4f252c04f053e824d6ca75c6",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://3ef20575fc12fd27f252acd28a8d0f65893832f29fd9c82f7ec165121af4572f",
-				"dweb:/ipfs/QmZMCoWWDTjhs1CNFMWv4JNWVyyeuzyqteCHhF4heCUYJJ"
-			]
-		},
-		"contracts/utils/SafeMath.sol": {
-			"keccak256": "0x8ca6870bea5eb6f7dae440f927ba9ec9a98da21bab9c3ce984021a959efa3852",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://778b218b0e19414b80d9f5b93d78249ad9e6b06846ef40a1bec3e3528f6659c3",
-				"dweb:/ipfs/QmNutPC5kg4W8HnzXVpJ2KS5ykqQCi75MAtr4XJpE7ugE8"
+				"bzz-raw://d629410408c8f7a8ee94d3714b8b2179d14a145da18a71178504aed29bc5ab09",
+				"dweb:/ipfs/QmckoM5wE2XRMPkAeDWbw325APQmPC5CMBkcudw2RcFMgW"
 			]
 		}
 	},
