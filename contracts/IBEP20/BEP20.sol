@@ -92,7 +92,7 @@ contract BEP20Token is Context, IBEP20, Ownable {
     _name = "HA Token";
     _symbol = "HAT";
     _decimals = 18;
-    _totalSupply = 10000000;
+    _totalSupply = 0;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);

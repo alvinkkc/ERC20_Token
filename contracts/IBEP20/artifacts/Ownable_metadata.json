@@ -105,10 +105,10 @@
 	},
 	"sources": {
 		"contracts/IBEP20/BEP20.sol": {
-			"keccak256": "0x9731211a3c4cffaf1604cd6ac6881a0b0534549075edb0ecb02c3ef068e79962",
+			"keccak256": "0x4a355dc53e44e2dc7d6dfe356a6def014fd7ed15b8da2665986734497c2bc9bc",
 			"urls": [
-				"bzz-raw://3843f59c998b72ea214e50338bfacfbf85baaa8762d9ecf082fe0b5852e76c21",
-				"dweb:/ipfs/QmPSYg8o4hUeugCrL99bj1rzswmxwqxMroS7LPZK5jsxFL"
+				"bzz-raw://f934327c44c4d57e88569eba9bc52d0ba3de55fb8b538a14c6b88c292430a5a0",
+				"dweb:/ipfs/QmcX1PiXmbywtnncG4umQwUiUj2AhjmZ18SgXFAXrNekjh"
 			]
 		},
 		"contracts/IBEP20/IBEP20.sol": {
